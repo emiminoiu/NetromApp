@@ -1,0 +1,137 @@
+﻿@model WebApp.Models.Announce
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Announce</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AddingDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AddingDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpiringDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExpiringDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Poza)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Poza)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeleCategoriei)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumeleCategoriei)
+        </dd>
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>*@
+        <dt>
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.AnnounceId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@*<div class="row">
+        <div class="col-md-4">
+            <form asp-action="CreateComment">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="control-label">
+
+
+                <p>Comentarii</p>
+                <input type="hidden" value="@Model.AnnounceId" name="AnnounceId" />
+                <input type="hidden" value="@Model.UserId" name="UserId" />
+                <input class="form-control" name="Description" type="text" />
+                <span class="text-danger"></span>
+    </div>
+        </div>
+        </form>
+    </div>
+
+    @foreach (var item in Model.Comment)
+    {
+        <div class="card">
+            <div class="row">
+                <div class="col-md-3" style="width:auto">
+                    <b><h3>@Html.DisplayFor(modelItem => item.User.Username) @Html.DisplayFor(modelItem => item.User.UserId)</h3></b>
+                </div>
+                <div class="col-md-9" style="height:75px">
+                    <h4>@Html.DisplayFor(modelItem => item.Description)</h4>
+                </div>
+            </div>
+        </div>
+    }*@
+
+
+
+<div class="row">
+    <div class="col-md-4">
+
+              <form asp-action="CreateComment">
+      
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div style="width:99%;padding:8%;height:190px;font:44px/44px cursive;border:10px double yellowgreen ;" class="control-label ">
+
+
+            <p>Comentarii</p>
+            <input type="hidden" value="@Model.AnnounceId" name="AnnounceId" />
+            <input type="hidden" value="@Model.UserId" name="UserId" />
+            <input class="form-control" name="Description" type="text" width="50"    placeholder="Adauga comentariul tau!" />
+            <button class="btn btn-primary" asp-controller="Announces" asp-action="CreateComment" style="text-align:center">Adauga Comentariul</button>
+            <span class="text-danger"></span>
+
+        </div>
+    </div>
+   </form>
+</div>
+
+@foreach (var item in Model.Comment)
+{
+    <div class="card">
+        <div class="row">
+            <div class="col-md-3" style="width:auto">
+                <b><h3>@Html.DisplayFor(modelItem => item.User.Username) </h3> <p style="font-size 15px">a comentat la acest anunt</p></b>
+               
+                <h4 style="color:red;font-size:15px">@Html.DisplayFor(modelItem => item.Description)</h4>
+                <br>
+            </div>
+           
+        </div>
+    </div>
+}
+
+

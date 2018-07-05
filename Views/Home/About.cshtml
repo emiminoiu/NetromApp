@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Despre noi";
+}
+<h2>@ViewData["Title"]</h2>
+@*<h3>@ViewData["Message"]</h3>*@
+<button class="btn btn-default btn-success" onclick="location.href='@Url.Action("Contact")'">Mergi la pagina de contact</button>
+
+
+
+
+
+<body background="~/images/bg.jpg" style="width:100%">
+<div id="accordion">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button style="color:black;font-family=Arial;font-size=25px;class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Drepturile si Obligatiile Utilizatorului
+                </button>
+            </h5>
+        </div>
+      
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div style="color:black;"class="card-body">
+                Utilizatorul are dreptul de a beneficia in intregime de Servicii, atat timp cat nu se constata o incalcare a prevederilor Termenilor si Conditiilor.
+                Utilizatorul isi asuma raspunderea pentru continutul Anunturilor publicate si declara ca acestea corespund cu starea reala si juridica a produsului ce face obiectul Anuntului si ca nu incalca drepturile Furnizorului si/sau ale unor terte persoane.
+                Utilizatorul declara pe propria raspundere ca este titularul tuturor drepturilor de proprietatea intelectuala, inclusiv al drepturilor de autor in privinta continutului publicat, inclusiv fotografii, si este de acord ca acesta sa fie pus la dispozitia publicului de Furnizor pe toate si oricare dintre platformele sale online, si prin alte mijloace, cum ar fi: comunicate de presa, televiziune, bannere, panouri publicitare si Internet.
+
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button style="color:black;font-family=Arial;font-size=25px;class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Promovarea Anunturilor
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div style="color:black;"class="card-body">
+                Orice Anunt publicat pe Website direct de catre Utilizator poate fi promovat conform articolelor 8.2 si 8.3. Exista trei tipuri de promovare pentru care Utilizatorul poate opta:
+
+                Promovarea, atat in lista de anunturi cat si pe prima pagina, este valabila pentru un singur Anunt. Zilele ramase nu se reporteaza si nu pot fi utilizate pentru promovarea unui produs diferit. Utilzatorii pot achizitiona concomitent cele doua tipuri de promovare (in lista de anunturi si pe prima pagina) pentru acelasi anunt.
+                Preturile pentru aceste servicii difera de la o subcategorie la alta si sunt afisate pe site inainte momentul achizitiei lor.
+                Lista completa de categorii si limite de anunturi existente pe site se poate consulta la linkul de aici. Pentru publicarea oricarui Anunt suplimentar peste limita gratuita ce se doreste a fi inregistrat si afisat in aceste categorii, va fi necesara achizitionarea unui Anunt platit sau unui pachet de Anunturi.
+                Pachetele de Anunturi achizitionate au o durata de valabilitate de 1 luna (30 de zile calendaristice) de la data cumpararii lor.
+                Utilizatorul nu va mai putea folosi sau recupera anunturile ramase neutilizate in Pachetele de Anunturi achizitionate, odata ce acestea au expirat.
+                Utilizatorul va primi o notificare in momentul in care va dori sa publice un Anunt peste limita si dupa alegerea uneia dintre optiunile descrise mai sus si efectuarea platii va avea posibilitate inregistrarii si afisarii Anuntului. Promovarea acestor Anunturi va functiona similar si in conformitate cu articolul 8 “Promovarea Anunturilor”.
+                Eventualele Limite de Anuturi gratuite acceptate pe Website intra in vigoare dupa expirarea tuturor Anunturilor active deja pe Website afisate conform conditiilor aplicabile la data afisarii lor.
+                Un Utilizator care a atins Limita de Anunturi gratuite a unei categorii nu va putea adauga anunturi noi gratuite in aceleasi categorii in urmatoarele 30 de zile de la publicare, chiar daca anunturile publicate initial sunt dezactivate sau respinse de un moderator. La trecerea a 30 de zile de la data publicarii unui Anunt Gratuit intr-o categorie cu Limite de Anunturi Gratuite, utilizatorul va putea publica un nou Anunt Gratuit.
+                Utilizatorii care achizitioneaza pachete de 5 sau mai multe anunturi peste limitele gratuite beneficiaza de posibilitatea configurarii, prin intermediul contului Logattor, a unui subdomeniu de forma "afacereamea".logattor.ro, in care se vor gasi afisate toate anunturile active pe site ale acestora.
+                Subdomeniul este vizibil pe site timp de 30 de zile de la data publicarii ultimului anunt din pachetul de 5 sau mai multe anunturi achizitionat peste limitele gratuite, respectiv de la data expirarii pachetului de anunturi mentionat anterior. Dupa acest termen, subdomeniul nu mai este vizibil sau accesibil utilizatorilor pe site-ul Logattor. Pentru ca subdomeniul sa redevina vizibil, Utilizatorul va trebui sa achizitioneze un nou pachet de 5 sau mai multe anunturi peste limitele gratuite.
+                Subdomeniul este rezervat utilizatorului care cumpara un pachet de 5 sau mai multe anunturi peste limitele gratuite timp de 90 de zile de la data publicarii pe site a ultimului anunt din pachetul de anunturi achizitionat, respectiv de la data expirarii pachetului de anunturi mentionat anterior. Daca utilizatorul nu achizitioneaza un pachet nou cu 5 sau mai multe anunturi peste limiele gratuite in acest interval de timp, la expirarea termenului, subdomeniul devine disponibil spre achizitie altor utilizatori.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button style="color:black;font-family=Arial;font-size=25px;class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Scopul urmarit
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div style="color:black;" class="card-body">
+                Scopul acestor Termeni si Conditii este Acela de a defini si reglementa conditiile de utilizare a Website-ului si a Serviciilor.
+                Website-ul contine legaturi (“link-uri”) sau trimiteri catre alte website-uri/pagini web pentru utilizarea carora se vor aplica termeni si conditii de utilizare specifici, astfel cum sunt acestia specificati pe website-urile/paginile respective, S.C. Logattor Online Services S.R.L. nefiind raspunzatoare si neasumandu-si nicio obligatie pentru continutul respectivelor website-uri si/sau cu privire la orice alte legaturi (“link-uri”) sau trimiteri din acestea catre alte website-uri sau pagini web. Includerea acestor legaturi (“link-uri”) sau trimiteri in Website este facuta de regula pentru ajutorul sau in interesul Utilizatorului, iar in alte cazuri in scop publicitar. Intrucat S.C. Logattor Online Services S.R.L. nu poate garanta/controla actualitatea/exactitatea informatiilor prezente pe websiturile unor terti, la care se face trimitere pe Website, Utilizatorul acceseaza acele website-uri si/sau le foloseste produsele/serviciile exclusiv pe propriul risc si pe propria raspundere.
+                Intregul continut al Website-ului incluzand, dar fara a se limita la texte, imagini, grafice, programe pentru calculator, precum si orice alte date si aplicatii, sunt proprietatea S.C. Logattor Online Services S.R.L. si/sau a partenerilor sai, fiind protejate conform Legii drepturilor de autor nr. 8/1996 cu modificarile ulterioare, precum si tuturor celorlalte legi, inclusive dar fara a se limita la legile aplicabile privind drepturile de proprietate intelectuala si industriala. Anunturile publicate de Utilizatori sunt obiect al drepturilor de proprietate intelectuala apartinand Utilizatorilor, fiind protejate ca atare conform legii. Preluarea oricaror informatii si/sau date de pe Website in scopul republicarii, distribuirii totale sau partiale sau in orice alte scopuri, sub orice forma, fara acordul scris prealabil al Furnizorului este strict interzisa si se pedepseste conform legilor in vigoare.
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="cointainer-fluid text-center">
+
+    <div>
+
+        <h2 style="color:black;">SERVICII</h2>
+        <h4 style="color:black;">Ce avem de oferit</h4>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-off"></span>
+                <h4 style="color:black;">Putere</h4>
+                <p style="color:black;">Experienta deosebita in utilizarea platformei Logattor datorita tehnologiei .NET</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-th"></span>
+                <h4 style="color:black;">Fara Taxe</h4>
+                <p style="color:black;">
+                    Adaugi gratuit produse la vanzare
+                    Poti adauga pe site pana la 100 de produse, fara sa platesti taxa de listare
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <span class="	glyphicon glyphicon-list-alt"></span>
+                <h4 style="color:black;">
+                    Instrumente speciale
+                </h4>
+                <p style="color:black;">
+                    Instrumente pentru a vinde rapid
+                    Ca sa iti maresti sansele de a vinde, poti face reclama pe site, la cele mai mici preturi.
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <h4 style="color:black;">Campanii de vanzari tot anul</h4>
+                <p style="color:black;">Poti participa la campanii: Black Friday, Luna Cadourilor, Back to School, 1 Iunie etc.</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-certificate"></span>
+                <h4 style="color:black">Comisioane Mici</h4>
+                <p style="color:black;">Sistemul nostru de comisioane asigura cel mai mic cost la vanzarea produsului.</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-time"></span>
+                <h4 style="color:black;">Economisire Timp</h4>
+                <p style="color:black;">Economisesti timp folosind importul automat pentru mii de produse.</p>
+            </div>
+        </div>
+    </div>
+</body>

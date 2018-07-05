@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "PAGINA DE CONTACT";
+}
+<h2>@ViewData["Title"]</h2>
+@*<h3>@ViewData["Message"]</h3>*@
+<button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Index", "Announces")'">Mergi la pagina de anunturi</button>
+<br>
+<br>
+
+@*<div class="container-fluid bg-primary">*@
+    <h2 class="text-center"></h2>
+    <div class="row">
+        <div class="col-sm-2">
+
+            <p style="color:black;font-size:18px;">Contacteaza-ne si vom incerca sa iti raspundem in cel mult 24 de ore.</p>
+
+            <p><span class="glyphicon glyphicon-map-marker"></span>Craiova,Dolj,Romania</p>
+            <p><span class="glyphicon glyphicon-phone"></span>+40770401769</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>minoiu_emi@yahoo.com</p>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+    function myMap() {
+        var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+        var mapProp = { center: myCenter, zoom: 12, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var marker = new google.maps.Marker({ position: myCenter });
+        marker.setMap(map);
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
